@@ -73,12 +73,15 @@ body {
 
 .switch .button::after {
     content: "";
-    background-image: linear-gradient(#980000, #6f0000 70%, #980000 100%);
+    background-image: linear-gradient(#650000, #6f0000, #980000);
     background-repeat: no-repeat;
     width: 100%;
     height: 50px;
     transform-origin: top;
-    transform: rotateX(-90deg);
+    transform: translateY(50px) rotateX(-90deg);
     position: absolute;
-    top: 0;
+    bottom: 0;
+    box-shadow: 0 50px 8px 0px black, 0  80px 20px 0, .5 ;
 }
+
+.switch .light {}
