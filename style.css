@@ -17,5 +17,26 @@ body {
     background-color: black;
     width: 150px;
     height: 195px;
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2),
+    black, inset 0 2px 2px -2px white, inset 0 #47434c, inset 0 0 2px 22px black;
+    border-radius: 5px;
+    padding: 20px;
+    perspective: 700px;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch input:checked + .button {
+    transform: translateZ(20px) rotateX(25deg);
+    box-shadow: 0 -10px 20px #ff1818;
+}
+
+.switch input:checked + .button .light {
+    animation: flicker .2s infinite .3s;
+}
+
+.switch input:checked + .button .shine {
+    animation: flicker .2s infinite .3s;
 }
