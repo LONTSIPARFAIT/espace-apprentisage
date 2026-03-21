@@ -105,7 +105,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(white, white) 50% radial-gradient(circle, transparent 50%, white, transparent 72%) 50% 80%/33% 25%;
+    background: linear-gradient(white, white) 50%, radial-gradient(circle, transparent 50%, white, transparent 72%) 50% 80%/33% 25%;
     background-repeat: no-repeat;
 }
 
@@ -119,4 +119,33 @@ body {
     background-repeat: no-repeat;
 }
 
-.switch .shadow {}
+.switch .shadow {
+    transition: all .3 cubic-bezier(1, 0, 1, 1);
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent 70%,rgba(255, 255, 255, 0.5) transparent 80%, rgba(255, 255, 255, 0.5) 50%);
+    background-repeat: no-repeat;
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes light-off {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+}
