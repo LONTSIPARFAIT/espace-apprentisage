@@ -19,3 +19,9 @@ echo $amis[1];
 // recupere un elemnent et son premmier element
 echo $amis[0][1];
 // affiche 'e'
+
+$cadeaux = ["Vélo", "Console", "Livre"];
+
+foreach ($cadeaux as $cadeau) {
+    echo "Je veut un(e)" . $cadeau . '/n';
+}
