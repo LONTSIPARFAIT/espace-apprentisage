@@ -20,3 +20,10 @@ cadeaux.map((cadeaux) => {
 const jouet = { nom: "Ballon", prix: 10 }
 
 console.log(jouet.nom)
+
+const score = 100
+const bonus = 50
+const total = score + bonus
+
+console.log(`Ton score est : ${total}`);
+

@@ -38,4 +38,10 @@ $bonus = 50;
 
 $total = $score + $bonus;
 
-echo "Ton score est de : " .$total;
+echo "Ton score est de : " .$total. " <br/>";
+
+if ($total > 100) {
+    echo 'Gagné';
+} else {
+    echo "Perdu";
+}
