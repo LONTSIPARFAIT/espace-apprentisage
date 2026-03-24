@@ -23,5 +23,5 @@ echo $amis[0][1];
 $cadeaux = ["Vélo", "Console", "Livre"];
 
 foreach ($cadeaux as $cadeau) {
-    echo "Je veut un(e)" . $cadeau . '/n';
+    echo " Je veut un(e) " . $cadeau . '<br/>';
 }
