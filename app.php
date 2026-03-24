@@ -9,7 +9,13 @@ echo direSalut($prenom);
 
 $amis = ['Jean', 'Sarah', 'Ali'];
 
-// our ajouter un new element au tableau
+// pour ajouter un new element au tableau
 $amis[] = 'Julien';
 
-echo $amis;
+//  pour recuperer les element du tableaux
+echo $amis[1];
+// affiche 'Sarah'
+
+// recupere un elemnent et son premmier element
+echo $amis[0][1];
+// affiche 'e'
