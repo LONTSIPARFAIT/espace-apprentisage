@@ -25,3 +25,17 @@ $cadeaux = ["Vélo", "Console", "Livre"];
 foreach ($cadeaux as $cadeau) {
     echo " Je veut un(e) " . $cadeau . '<br/>';
 }
+
+$jouet = [
+    "nom" => "Ballon",
+    "prix" => 150,
+];
+
+echo $jouet['nom'];
+
+$score = 100;
+$bonus = 50;
+
+$total = $score + $bonus;
+
+echo "Ton score est de : " .$total;
