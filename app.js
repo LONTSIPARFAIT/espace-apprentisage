@@ -27,3 +27,10 @@ const total = score + bonus
 
 console.log(`Ton score est : ${total}`);
 
+if (total > 100) {
+    console.log("Gagné");    
+}  else {
+    console.log("Perdu");
+    
+}
+
